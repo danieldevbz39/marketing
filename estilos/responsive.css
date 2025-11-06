@@ -1,0 +1,348 @@
+/* Estilo base (mobile-first) */
+:root {
+    --largura-maxima: 1200px;
+}
+
+/* Layout responsivo geral */
+.container {
+    width: 100%;
+    max-width: var(--largura-maxima);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Ajustes para as sections e cards */
+.unit-card {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    padding: 20px;
+}
+
+.unit-card p, 
+.unit-card li, 
+.unit-card details {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+/* Ajuste para tabelas responsivas */
+.unit-card table {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/* Ajuste para imagens dentro das sections */
+.unit-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilo base para o sidebar */
+#sidebar {
+    position: fixed;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+    padding: 15px 10px;
+    z-index: 1000;
+    scrollbar-width: none; /* Para Firefox */
+    -ms-overflow-style: none; /* Para Internet Explorer e Edge */
+}
+
+/* Esconde a barra de rolagem no Chrome, Safari e Opera */
+#sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Esconde barras de rolagem horizontais em tabelas responsivas */
+.table-responsive::-webkit-scrollbar {
+    display: none;
+}
+
+.table-responsive {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#sidebar a {
+    display: block;
+    padding: 6px 0;
+    margin: 2px 0;
+    font-size: 0.9em;
+    line-height: 1.2;
+}
+
+#sidebar h1 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+}
+
+#sidebar p {
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+}
+
+#main-content {
+    transition: all 0.3s ease;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#main-content::-webkit-scrollbar {
+    display: none;
+}
+
+/* Media queries para diferentes tamanhos de tela */
+
+/* Telas pequenas (smartphones) */
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    /* Ajustes para menu em tela pequena */
+    #sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    #sidebar h1 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    #sidebar a {
+        display: block;
+        padding: 8px 0;
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    #main-content {
+        width: 100%;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    /* Ajustes específicos para texto em telas pequenas */
+    .unit-card {
+        padding: 15px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .unit-card h2 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    .unit-card .highlight {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    /* Melhor adaptação para listas em telas pequenas */
+    .unit-card ul, 
+    .unit-card ol {
+        padding-left: 20px;
+        margin: 10px 0;
+    }
+
+    .unit-card li {
+        margin-bottom: 8px;
+    }
+
+    /* Ajuste para detalhes em telas pequenas */
+    .unit-card details {
+        margin: 10px 0;
+    }
+
+    .unit-card summary {
+        padding: 8px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* Ajustes para grid de produtos */
+    .produtos-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /* Ajustes para formulários */
+    form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    input, select, textarea {
+        width: 100%;
+    }
+}
+
+/* Tablets */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    #sidebar {
+        width: 250px;
+        position: fixed;
+        left: 0;
+    }
+
+    #main-content {
+        margin-left: 250px;
+        width: calc(100% - 250px);
+        padding: 20px;
+    }
+
+    #sidebar h1 {
+        font-size: 1.1em;
+        margin-bottom: 12px;
+    }
+
+    #sidebar a {
+        display: block;
+        padding: 5px 0;
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .produtos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    form {
+        width: 90%;
+        max-width: 500px;
+    }
+}
+
+/* Desktops */
+@media screen and (min-width: 769px) {
+    #sidebar {
+        width: 300px;
+        position: fixed;
+        left: 0;
+        padding: 30px;
+    }
+
+    #main-content {
+        margin-left: 300px;
+        width: calc(100% - 300px);
+        padding: 30px;
+    }
+
+    #sidebar h1 {
+        font-size: 1.3em;
+        margin-bottom: 15px;
+    }
+
+    #sidebar a {
+        display: block;
+        padding: 6px 0;
+        font-size: 15px;
+        transition: all 0.2s ease;
+        line-height: 1.3;
+    }
+
+    #sidebar a:hover {
+        transform: translateX(10px);
+    }
+
+    .produtos-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    form {
+        width: 80%;
+        max-width: 600px;
+    }
+
+    /* Layout flexível para cabeçalho */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* Telas grandes */
+@media screen and (min-width: 1200px) {
+    .produtos-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Classes utilitárias para responsividade */
+.hide-mobile {
+    display: none !important;
+}
+
+@media screen and (min-width: 768px) {
+    .hide-mobile {
+        display: initial !important;
+    }
+    .show-mobile {
+        display: none !important;
+    }
+}
+
+/* Imagens responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tabelas responsivas */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Ajustes de texto para leitura */
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    h1 { font-size: 1.8em; }
+    h2 { font-size: 1.5em; }
+    h3 { font-size: 1.2em; }
+}
+
+/* Espaçamento responsivo */
+.section-padding {
+    padding: 2rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .section-padding {
+        padding: 4rem 2rem;
+    }
+}

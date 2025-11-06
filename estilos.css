@@ -22,7 +22,26 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    display: flex; 
+    display: flex;
+    overflow-x: hidden;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* Esconde a barra de rolagem no Chrome, Safari e Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Esconde a barra de rolagem do html */
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
 
 h1, h2, h3 { 
@@ -30,7 +49,8 @@ h1, h2, h3 {
     margin-top: 25px; 
 }
 h1 { 
-    font-size: 1.8em; 
+    font-size: 1.8em;
+    text-align: center; 
     border-bottom: none; 
     padding-bottom: 0; 
     color: #fff; 
@@ -75,7 +95,17 @@ h3 {
     background-color: #004085; 
 }
 
-#sidebar h1 { margin-bottom: 30px; }
+#sidebar h1 { 
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#sidebar p {
+    text-align: center;
+    font-size: 1.1em;
+    margin: 0 auto;
+    max-width: 80%;
+}
 
 /* Main Content Area */
 #main-content { 
@@ -83,6 +113,13 @@ h3 {
     padding: 40px 60px; 
     flex-grow: 1; 
     max-width: calc(100% - 340px);
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#main-content::-webkit-scrollbar {
+    display: none;
 }
 
 .unit-card { 
@@ -91,6 +128,54 @@ h3 {
     border-radius: 12px; 
     box-shadow: inset 1px 1px 4px 7px rgba(0, 0, 0, 0.05); 
     margin-bottom: 40px; 
+}
+
+/* Alinhamento de textos e elementos */
+.unit-card p {
+    text-align: justify;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+.unit-card .highlight p {
+    margin: 10px 0;
+    padding: 0 15px;
+}
+
+.unit-card h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.unit-card ul, 
+.unit-card ol {
+    padding-left: 30px;
+    margin: 15px 0;
+}
+
+.unit-card li {
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+/* Estilos específicos para a seção do Funil AIDA */
+.unit-card details[open] {
+    background-color: #f8f9fa;
+}
+
+.unit-card details summary {
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+.unit-card details .key-concept {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.unit-card details ul {
+    margin-top: 10px;
 }
 
 /* Estilo para a Unidade 8 - Marketing em Redes Sociais */
@@ -157,31 +242,55 @@ details {
     border: 1px solid #b2ebf2; 
     border-radius: 6px; 
     margin: 15px 0; 
+    padding: 0 15px;
 }
 
 summary { 
     font-weight: bold; 
-    padding: 15px; 
+    padding: 15px 0;
+    margin: 0 -15px;
+    padding-left: 15px;
     cursor: pointer; 
     color: #0056b3; 
     outline: none; 
-    transition: background-color 0.3s; 
+    transition: background-color 0.3s;
+    text-align: left;
 }
 
 details[open] summary { 
-    background-color: #c9e8eb; border-bottom: 1px solid #b2ebf2; }
-details p, details ul, details table { padding: 0 15px 15px 15px; margin: 0; 
+    background-color: #c9e8eb; 
+    border-bottom: 1px solid #b2ebf2; 
+}
+
+details p, details ul, details table { 
+    padding: 15px; 
+    margin: 0; 
+}
+
+details ul { 
+    list-style-position: inside;
+    padding-left: 15px;
+}
+
+details li {
+    margin: 8px 0;
+    padding-left: 15px;
+    text-align: left;
 }
 
 /* Highlighting and Key Concepts (Default) */
 .key-concept { 
     font-weight: 700; 
-    color: #d32f2f; 
+    color: #d32f2f;
+    display: inline-block;
+    margin: 0 2px;
 }
 
 .key-phrase { 
     font-style: italic; 
-    color: #388e3c; 
+    color: #388e3c;
+    display: inline-block;
+    margin: 0 2px;
 }
 
 .highlight { 
@@ -190,19 +299,33 @@ details p, details ul, details table { padding: 0 15px 15px 15px; margin: 0;
     padding: 20px; 
     margin: 20px 0; 
     border-radius: 6px; 
+    text-align: justify;
+}
+
+.highlight p {
+    margin: 10px 0;
 }
 
 /* Interactive Quiz/Verification (Default) */
 .quiz-interaction { 
     background-color: #f2f2f2; 
-    padding: 20px; 
+    padding: 25px; 
     border-radius: 8px; 
     margin: 20px 0; 
     border: 1px solid #ccc; 
+    text-align: left;
+}
+
+.quiz-interaction p {
+    margin: 15px 0;
+    line-height: 1.6;
 }
 
 .quiz-interaction strong { 
-    color: #0056b3; 
+    color: #0056b3;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
 }
 
 .quiz-interaction .options button { 
@@ -244,18 +367,113 @@ details p, details ul, details table { padding: 0 15px 15px 15px; margin: 0;
 }
 
 /* Table Style (Default) */
-table { width: 100%; 
+table { 
+    width: 90%; 
     border-collapse: collapse; 
-    margin: 20px 0; 
+    margin: 20px auto; /* Centraliza a tabela */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 th, td { 
     border: 1px solid #ddd; 
-    padding: 10px; 
-    text-align: left; 
+    padding: 12px; 
+    text-align: center; /* Centraliza o conteúdo das células */
 }
 
 th { 
     background-color: #0056b3; 
     color: white; 
+    font-weight: 600;
+}
+
+/* Estilos específicos para a tabela de Influenciadores */
+details table {
+    width: 90%;
+    margin: 20px auto;
+    background-color: white;
+}
+
+details thead th {
+    background-color: #0056b3;
+    color: white;
+    padding: 15px;
+}
+
+details tbody td {
+    padding: 12px;
+    vertical-align: middle;
+}
+
+/* Estilos para a seção de PDFs */
+.pdf-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.pdf-item {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pdf-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.pdf-icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.pdf-info {
+    flex-grow: 1;
+}
+
+.pdf-info h3 {
+    margin: 0 0 10px 0;
+    color: #0056b3;
+    font-size: 1.1em;
+}
+
+.pdf-info p {
+    margin: 0 0 15px 0;
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.pdf-download {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.2s ease;
+}
+
+.pdf-download:hover {
+    background-color: #003d82;
+}
+
+.file-size {
+    margin-left: 8px;
+    opacity: 0.8;
+    font-size: 0.9em;
 }
