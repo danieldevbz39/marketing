@@ -1,360 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia Completo de Marketing Digital: Estratégia, Influência e Performance</title>
-    
-    <style>
-        @charset "UTF-8";
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="estilos.css">
 
-* {
-    padding: 0px;
-    margin: 0px;
-}
-
-    body { 
-        font-family: 'Poppins', sans-serif; 
-        line-height: 1.6; 
-        margin: 0; 
-        padding: 0; 
-        /* Fundo degradê ouro */
-        background: #d4af37; /* fallback */
-        background: linear-gradient(135deg,
-            #fff8e1 0%,
-            #ffe082 20%,
-            #ffd54f 40%,
-            #f1c40f 60%,
-            #d4af37 80%,
-            #b8860b 100%);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        display: flex; 
-    }
-
-    h1, h2, h3 { 
-        color: #0056b3; 
-        margin-top: 25px; 
-    }
-    h1 { 
-        font-size: 1.8em; 
-        border-bottom: none; 
-        padding-bottom: 0; 
-        color: #fff; 
-    }
-
-    h2 { 
-        font-size: 1.6em; 
-        border-bottom: 2px solid #e0e0e0; 
-        padding-bottom: 10px; 
-        margin-top: 40px; 
-    }
-
-    h3 { 
-        font-size: 1.2em; 
-        color: #007bff; 
-        margin-top: 20px; 
-    }
-
-    /* Sidebar Navigation */
-    #sidebar {
-        width: 280px; 
-        background: linear-gradient(to bottom, #0056b3, #010031); 
-        box-shadow: #2c3e50;
-        color: white; 
-        padding: 10px; 
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
-        height: 100vh;         
-        position: fixed; 
-        overflow-y: auto; 
-    }
-
-    #sidebar a { 
-        color: white; 
-        text-decoration: none; 
-        padding: 10px 0; 
-        display: block; 
-        border-left: 3px solid transparent; 
-        transition: all 0.3s ease; 
-    }
-
-    #sidebar a:hover, #sidebar a.active { 
-        border-left: 3px solid #ffc107; 
-        background-color: #004085; 
-    }
-
-    #sidebar h1 { margin-bottom: 30px; }
-
-    /* Main Content Area */
-    #main-content { 
-        margin-left: 280px; 
-        padding: 40px 60px; 
-        flex-grow: 1; 
-        max-width: calc(100% - 340px);
-    }
-
-    .unit-card { 
-        background-color: white; 
-        padding: 30px; 
-        border-radius: 12px; 
-        box-shadow: inset 1px 1px 4px 7px rgba(0, 0, 0, 0.05); 
-        margin-bottom: 40px; 
-    }
-
-    /* Estilo para a Unidade 8 - Marketing em Redes Sociais */
-    #unidade8.unit-card {
-        background-color: #e6f7ff; /* Um azul mais claro e distinto */
-        border: 2px solid #4da6ff; /* Borda para destacar */
-        box-shadow: 0 6px 16px rgba(0, 102, 204, 0.2); /* Sombra mais pronunciada */
-        color: #2c3e50; /* Cor de texto padrão para esta seção */
-    }
-
-    #unidade8 h2 {
-        color: #007bff; /* Título principal em azul vibrante */
-        border-bottom: 2px solid #007bff; /* Borda inferior correspondente */
-    }
-
-    #unidade8 .highlight {
-        background-color: #d1ecf1; /* Fundo do destaque em azul/ciano mais claro */
-        border-left: 5px solid #007bff; /* Borda esquerda em azul vibrante */
-        color: #0c5460; /* Cor do texto no destaque */
-    }
-
-    #unidade8 details {
-        background-color: #cfe2ff; /* Fundo dos detalhes em azul muito claro */
-        border: 1px solid #91caff; /* Borda dos detalhes */
-    }
-
-    #unidade8 summary {
-        color: #0056b3; /* Título do resumo em azul escuro */
-        background-color: #b8daff; /* Fundo do resumo */
-    }
-
-    #unidade8 details[open] summary {
-        background-color: #91caff; /* Fundo do resumo aberto */
-        border-bottom: 1px solid #91caff;
-    }
-
-    #unidade8 .key-concept {
-        color: #e74c3c; /* Mantém um vermelho forte para "key-concept" */
-    }
-
-    #unidade8 .key-phrase {
-        color: #28a745; /* Mantém um verde para "key-phrase" */
-    }
-
-    #unidade8 .quiz-interaction {
-        background-color: #e9ecef; /* Fundo do quiz */
-        border: 1px solid #ced4da; /* Borda do quiz */
-    }
-
-    #unidade8 .quiz-interaction strong {
-        color: #0056b3; /* Cor do texto forte no quiz */
-    }
-
-    #unidade8 .quiz-interaction .options button {
-        background-color: #007bff; /* Botões do quiz em azul */
-    }
-    #unidade8 .quiz-interaction .options button:hover {
-        background-color: #0056b3;
-    }
-
-/* Interactive Elements - Collapsible Sections (Default) */
-details { 
-    background-color: #e0f7fa; 
-    border: 1px solid #b2ebf2; 
-    border-radius: 6px; 
-    margin: 15px 0; 
-}
-
-summary { 
-    font-weight: bold; 
-    padding: 15px; 
-    cursor: pointer; 
-    color: #0056b3; 
-    outline: none; 
-    transition: background-color 0.3s; 
-}
-
-details[open] summary { 
-    background-color: #c9e8eb; border-bottom: 1px solid #b2ebf2; }
-details p, details ul, details table { padding: 0 15px 15px 15px; margin: 0; 
-}
-
-/* Highlighting and Key Concepts (Default) */
-.key-concept { 
-    font-weight: 700; 
-    color: #d32f2f; 
-}
-
-.key-phrase { 
-    font-style: italic; 
-    color: #388e3c; 
-}
-
-.highlight { 
-    background-color: #fff3e0; 
-    border-left: 5px solid #ff9800; 
-    padding: 20px; 
-    margin: 20px 0; 
-    border-radius: 6px; 
-}
-
-/* Interactive Quiz/Verification (Default) */
-.quiz-interaction { 
-    background-color: #f2f2f2; 
-    padding: 20px; 
-    border-radius: 8px; 
-    margin: 20px 0; 
-    border: 1px solid #ccc; 
-}
-
-.quiz-interaction strong { 
-    color: #0056b3; 
-}
-
-.quiz-interaction .options button { 
-    background-color: #007bff; 
-    color: white; 
-    border: none; 
-    padding: 10px 20px; 
-    margin-right: 10px; 
-    cursor: pointer; 
-    border-radius: 5px; 
-    transition: background-color 0.3s; 
-}
-
-.quiz-interaction .options button:hover {           
-    background-color: #0056b3; 
-}
-
-.quiz-interaction .feedback { 
-    margin-top: 15px; 
-    padding: 10px; 
-    border-radius: 5px; 
-    font-weight: bold; 
-}
-
-.feedback.hidden {
-     display: none; 
-}
-
-.feedback.correct { 
-    color: #1e8449; 
-}
-
-.feedback.incorrect { 
-    color: #cb4335; 
-}
-
-/* Table Style (Default) */
-table { width: 100%; 
-    border-collapse: collapse; 
-    margin: 20px 0; 
-}
-
-th, td { 
-    border: 1px solid #ddd; 
-    padding: 10px; 
-    text-align: left; 
-}
-
-th { 
-    background-color: #0056b3; 
-    color: white; 
-}
-    </style>
-    
-    <script>
-        // Correção de Lógica 1: Mecanismo de Quiz (checkAnswer)
-        function checkAnswer(button) {
-            const quizContainer = button.closest('.quiz-interaction');
-            const feedbackElement = quizContainer.querySelector('.feedback');
-            const buttons = quizContainer.querySelectorAll('.options button');
-            const isCorrect = button.dataset.correct === 'true';
-
-            // 1. Desabilita todos os botões e os estiliza
-            buttons.forEach(btn => {
-                btn.disabled = true;
-                btn.style.backgroundColor = '#ccc';
-                btn.style.color = '#333';
-            });
-            
-            // 2. Estiliza o botão clicado e define a classe de feedback
-            if (isCorrect) {
-                button.style.backgroundColor = '#1e8449'; // Verde para correto
-                feedbackElement.className = 'feedback correct';
-            } else {
-                button.style.backgroundColor = '#cb4335'; // Vermelho para incorreto
-                // Opcional: Destacar o botão correto
-                buttons.forEach(btn => {
-                    if (btn.dataset.correct === 'true') {
-                        btn.style.border = '2px solid #1e8449';
-                        btn.style.backgroundColor = '#e0ffe0';
-                        btn.style.color = '#1e8449';
-                    }
-                });
-                feedbackElement.className = 'feedback incorrect';
-            }
-
-            // 3. Exibe o feedback
-            feedbackElement.style.display = 'block';
-        }
-
-        // Correção de Lógica 2: Navegação da Sidebar (IntersectionObserver)
-        document.addEventListener('DOMContentLoaded', () => {
-            const sections = document.querySelectorAll('.unit-card');
-            const navLinks = document.querySelectorAll('#sidebar a');
-
-            const options = {
-                root: null,
-                rootMargin: '0px',
-                // Threshold: 0.5 significa que o observador ativa quando 50% da seção está visível
-                threshold: 0.5 
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        // Limpa a classe 'active' de todos os links
-                        navLinks.forEach(link => {
-                            link.classList.remove('active');
-                        });
-
-                        // Aplica 'active' ao link correspondente à seção visível
-                        const targetId = entry.target.id;
-                        const activeLink = document.querySelector(`#sidebar a[href="#${targetId}"]`);
-                        
-                        if (activeLink) {
-                            activeLink.classList.add('active');
-                        }
-                    }
-                });
-            }, options);
-
-            sections.forEach(section => {
-                observer.observe(section);
-            });
-            
-            // Lógica para rolagem suave ao clicar nos links (opcional, mas melhora a UX)
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    // Previne o comportamento padrão (salto instantâneo)
-                    e.preventDefault(); 
-                    
-                    // Obtém o alvo do href (ex: #unidade8)
-                    const targetId = this.getAttribute('href').substring(1);
-                    const targetElement = document.getElementById(targetId);
-
-                    if (targetElement) {
-                        // Rola para o elemento com um comportamento suave
-                        targetElement.scrollIntoView({ behavior: 'smooth' });
-                    }
-                });
-            });
-        });
-    </script>
 </head>
 <body>
 
@@ -369,7 +20,7 @@ th {
         <a href="#unidade6">6. Planejamento Estratégico</a>
         <a href="#unidade7">7. Diversidade e Transversalidade</a>
         <a href="#unidade8">8. Marketing Rede Sociais</a>
-        <a href="resumo-do-guia.html">9. Resumo do Guia</a>
+        <a href="#unidade9">9. Vídeos e áudios "Marketing Digital em Redes Sociais"</a>
     </nav>
 
     <main id="main-content">
@@ -410,7 +61,7 @@ th {
                     <button onclick="checkAnswer(this)" data-correct="false">Verdadeiro</button>
                     <button onclick="checkAnswer(this)" data-correct="true">Falso</button>
                 </div>
-                <p class="feedback">Resposta Correta: Falso. O branding é um processo estratégico de construção de significado, posicionamento e relacionamento entre marca e consumidor, não se limitando à estética. (Ref. PDF 02)</p>
+                <p class="feedback" data-original-text="Resposta Correta: Falso. O branding é um processo estratégico de construção de significado, posicionamento e relacionamento entre marca e consumidor, não se limitando à estética. (Ref. PDF 02)">Resposta Correta: Falso. O branding é um processo estratégico de construção de significado, posicionamento e relacionamento entre marca e consumidor, não se limitando à estética. (Ref. PDF 02)</p>
             </div>
         </section>
 
@@ -436,7 +87,7 @@ th {
                     <button onclick="checkAnswer(this)" data-correct="true">Verdadeiro</button>
                     <button onclick="checkAnswer(this)" data-correct="false">Falso</button>
                 </div>
-                <p class="feedback">Resposta Correta: Verdadeiro. Focar apenas a última etapa compromete o relacionamento no longo prazo. (Ref. PDF 03)</p>
+                <p class="feedback" data-original-text="Resposta Correta: Verdadeiro. Focar apenas a última etapa compromete o relacionamento no longo prazo. (Ref. PDF 03)">Resposta Correta: Verdadeiro. Focar apenas a última etapa compromete o relacionamento no longo prazo. (Ref. PDF 03)</p>
             </div>
         </section>
 
@@ -474,7 +125,7 @@ th {
                     <button onclick="checkAnswer(this)" data-correct="true">Verdadeiro</button>
                     <button onclick="checkAnswer(this)" data-correct="false">Falso</button>
                 </div>
-                <p class="feedback">Resposta Correta: Verdadeiro. Eles mantêm uma relação mais próxima e autêntica com seu público, o que favorece a credibilidade. (Ref. PDF 04)</p>
+                <p class="feedback" data-original-text="Resposta Correta: Verdadeiro. Eles mantêm uma relação mais próxima e autêntica com seu público, o que favorece a credibilidade. (Ref. PDF 04)">Resposta Correta: Verdadeiro. Eles mantêm uma relação mais próxima e autêntica com seu público, o que favorece a credibilidade. (Ref. PDF 04)</p>
             </div>
         </section>
 
@@ -507,7 +158,7 @@ th {
                     <button onclick="checkAnswer(this)" data-correct="true">Verdadeiro</button>
                     <button onclick="checkAnswer(this)" data-correct="false">Falso</button>
                 </div>
-                <p class="feedback">Resposta Correta: Verdadeiro. A gestão estratégica, com foco em otimização contínua e análise de métricas, pode gerar resultados melhores, mesmo com orçamento menor. (Ref. PDF 05)</p>
+                <p class="feedback" data-original-text="Resposta Correta: Verdadeiro. A gestão estratégica, com foco em otimização contínua e análise de métricas, pode gerar resultados melhores, mesmo com orçamento menor. (Ref. PDF 05)">Resposta Correta: Verdadeiro. A gestão estratégica, com foco em otimização contínua e análise de métricas, pode gerar resultados melhores, mesmo com orçamento menor. (Ref. PDF 05)</p>
             </div>
         </section>
         
@@ -533,7 +184,7 @@ th {
                     <button onclick="checkAnswer(this)" data-correct="false">Verdadeiro</button>
                     <button onclick="checkAnswer(this)" data-correct="true">Falso</button>
                 </div>
-                <p class="feedback">Resposta Correta: Falso. O gestor tem um papel central e contínuo, acompanhando métricas, interpretando cenários e tomando decisões estratégicas com base em dados reais. (Ref. PDF 06)</p>
+                <p class="feedback" data-original-text="Resposta Correta: Falso. O gestor tem um papel central e contínuo, acompanhando métricas, interpretando cenários e tomando decisões estratégicas com base em dados reais. (Ref. PDF 06)">Resposta Correta: Falso. O gestor tem um papel central e contínuo, acompanhando métricas, interpretando cenários e tomando decisões estratégicas com base em dados reais. (Ref. PDF 06)</p>
             </div>
         </section>
         
@@ -557,7 +208,7 @@ th {
                     <button onclick="checkAnswer(this)" data-correct="true">Verdadeiro</button>
                     <button onclick="checkAnswer(this)" data-correct="false">Falso</button>
                 </div>
-                <p class="feedback">Resposta Correta: Verdadeiro. Inclusão feita sem profundidade e cuidado pode perpetuar estigmas e gerar rejeição do público. (Ref. PDF 07)</p>
+                <p class="feedback" data-original-text="Resposta Correta: Verdadeiro. Inclusão feita sem profundidade e cuidado pode perpetuar estigmas e gerar rejeição do público. (Ref. PDF 07)">Resposta Correta: Verdadeiro. Inclusão feita sem profundidade e cuidado pode perpetuar estigmas e gerar rejeição do público. (Ref. PDF 07)</p>
             </div>
         </section>
         
@@ -592,10 +243,68 @@ th {
                     <button onclick="checkAnswer(this)" data-correct="false">Verdadeiro</button>
                     <button onclick="checkAnswer(this)" data-correct="true">Falso</button>
                 </div>
-                <p class="feedback">Resposta Correta: Falso. O foco deve ser o engajamento e a conversão (vendas, leads), e não apenas em métricas de vaidade como o número de seguidores. (Ref. Estratégia de Conteúdo)</p>
+                <p class="feedback" data-original-text="Resposta Correta: Falso. O foco deve ser o engajamento e a conversão (vendas, leads), e não apenas em métricas de vaidade como o número de seguidores. (Ref. Estratégia de Conteúdo)">Resposta Correta: Falso. O foco deve ser o engajamento e a conversão (vendas, leads), e não apenas em métricas de vaidade como o número de seguidores. (Ref. Estratégia de Conteúdo)</p>
             </div>
         </section>
         
+        <!-- Cartão de acesso rápido ao resumo do guia (Unidade 8) -->
+        <section id="resumo-guia" class="unit-card">
+            <h2>9. Resumo do Guia — Unidade 8</h2>
+            <p>Consulte o resumo multimídia da Unidade 8 (vídeo, áudio e mapa mental) para revisar os pontos principais de Marketing em Redes Sociais.</p>
+            <p class="highlight" style="padding:10px;">
+                <a href="resumo-do-guia.html" style="color:#0056b3; text-decoration:none; font-weight:700;">Abrir Resumo da Unidade 8</a>
+            </p>
+        </section>
+
+        <section id="unidade9" class="unit-card">
+            <h2>9. Galeria de Recursos</h2>
+            
+            <div class="highlight">
+                <p>Explore nossa coleção de recursos multimídia sobre Marketing Digital. Aqui você encontra fotos, vídeos e áudios complementares ao material do curso.</p>
+            </div>
+
+            <!-- Área de Fotos -->
+            <details open>
+                <summary>Galeria de Fotos</summary>
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; padding: 16px;">
+                    <figure style="margin: 0;">
+                        <img src="img/NotebookLM Mind Map.png" alt="Mapa conceitual" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                        <figcaption style="font-size: 0.9em; color: #666; margin-top: 8px;">Mapa conceitual</figcaption>
+                    </figure>                   
+                    <!-- Adicione mais figures conforme necessário -->
+                </div>
+            </details>
+
+            <!-- Área de Vídeos -->
+            <details open>
+                <summary>Biblioteca de Vídeos</summary>
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; padding: 16px;">
+                    <div class="video-container">
+                        <video controls style="width: 100%; border-radius: 8px;">
+                            <source src="vídeos/Marketing_Digital__O_Guia.mp4" type="video/mp4">
+                            Seu navegador não suporta o elemento de vídeo.
+                        </video>
+                        <p style="font-size: 0.9em; color: #666; margin-top: 8px;">Veja o Resumo da unidade 8</p>
+                    </div>
+                </div>
+            </details>
+
+            <!-- Área de Áudios -->
+            <details open>
+                <summary>Podcasts e Áudios</summary>
+                <div style="display: grid; gap: 16px; padding: 16px;">
+                    <div class="audio-container" style="background: #f8f9fa; padding: 16px; border-radius: 8px;">
+                        <p style="margin: 0 0 8px 0; font-weight: bold;">Episódio 1: Introdução ao Marketing Digital</p>
+                        <audio controls style="width: 100%;">
+                            <source src="áudios/Marketing_Digital_em_Profundidade__De_Kotler_aos_Algoritmos_de_.m4a" type="audio/mpeg">
+                            Seu navegador não suporta o elemento de áudio.
+                        </audio>
+                        <p style="font-size: 0.9em; color: #666; margin-top: 8px;">Duração: 15:30 min</p>
+                    </div>
+                </div>
+            </details>            
+        </section>
     </main>
+    <script src="quiz-interacoes.js"></script>
 </body>
 </html>
