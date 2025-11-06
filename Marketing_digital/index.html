@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Completo de Marketing Digital: Estratégia, Influência e Performance</title>
+    
+    <style>
+        @charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+    body { 
+        font-family: 'Poppins', sans-serif; 
+        line-height: 1.6; 
+        margin: 0; 
+        padding: 0; 
+        /* Fundo degradê ouro */
+        background: #d4af37; /* fallback */
+        background: linear-gradient(135deg,
+            #fff8e1 0%,
+            #ffe082 20%,
+            #ffd54f 40%,
+            #f1c40f 60%,
+            #d4af37 80%,
+            #b8860b 100%);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        display: flex; 
+    }
+
+    h1, h2, h3 { 
+        color: #0056b3; 
+        margin-top: 25px; 
+    }
+    h1 { 
+        font-size: 1.8em; 
+        border-bottom: none; 
+        padding-bottom: 0; 
+        color: #fff; 
+    }
+
+    h2 { 
+        font-size: 1.6em; 
+        border-bottom: 2px solid #e0e0e0; 
+        padding-bottom: 10px; 
+        margin-top: 40px; 
+    }
+
+    h3 { 
+        font-size: 1.2em; 
+        color: #007bff; 
+        margin-top: 20px; 
+    }
+
+    /* Sidebar Navigation */
+    #sidebar {
+        width: 280px; 
+        background: linear-gradient(to bottom, #0056b3, #010031); 
+        box-shadow: #2c3e50;
+        color: white; 
+        padding: 10px; 
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+        height: 100vh;         
+        position: fixed; 
+        overflow-y: auto; 
+    }
+
+    #sidebar a { 
+        color: white; 
+        text-decoration: none; 
+        padding: 10px 0; 
+        display: block; 
+        border-left: 3px solid transparent; 
+        transition: all 0.3s ease; 
+    }
+
+    #sidebar a:hover, #sidebar a.active { 
+        border-left: 3px solid #ffc107; 
+        background-color: #004085; 
+    }
+
+    #sidebar h1 { margin-bottom: 30px; }
+
+    /* Main Content Area */
+    #main-content { 
+        margin-left: 280px; 
+        padding: 40px 60px; 
+        flex-grow: 1; 
+        max-width: calc(100% - 340px);
+    }
+
+    .unit-card { 
+        background-color: white; 
+        padding: 30px; 
+        border-radius: 12px; 
+        box-shadow: inset 1px 1px 4px 7px rgba(0, 0, 0, 0.05); 
+        margin-bottom: 40px; 
+    }
+
+    /* Estilo para a Unidade 8 - Marketing em Redes Sociais */
+    #unidade8.unit-card {
+        background-color: #e6f7ff; /* Um azul mais claro e distinto */
+        border: 2px solid #4da6ff; /* Borda para destacar */
+        box-shadow: 0 6px 16px rgba(0, 102, 204, 0.2); /* Sombra mais pronunciada */
+        color: #2c3e50; /* Cor de texto padrão para esta seção */
+    }
+
+    #unidade8 h2 {
+        color: #007bff; /* Título principal em azul vibrante */
+        border-bottom: 2px solid #007bff; /* Borda inferior correspondente */
+    }
+
+    #unidade8 .highlight {
+        background-color: #d1ecf1; /* Fundo do destaque em azul/ciano mais claro */
+        border-left: 5px solid #007bff; /* Borda esquerda em azul vibrante */
+        color: #0c5460; /* Cor do texto no destaque */
+    }
+
+    #unidade8 details {
+        background-color: #cfe2ff; /* Fundo dos detalhes em azul muito claro */
+        border: 1px solid #91caff; /* Borda dos detalhes */
+    }
+
+    #unidade8 summary {
+        color: #0056b3; /* Título do resumo em azul escuro */
+        background-color: #b8daff; /* Fundo do resumo */
+    }
+
+    #unidade8 details[open] summary {
+        background-color: #91caff; /* Fundo do resumo aberto */
+        border-bottom: 1px solid #91caff;
+    }
+
+    #unidade8 .key-concept {
+        color: #e74c3c; /* Mantém um vermelho forte para "key-concept" */
+    }
+
+    #unidade8 .key-phrase {
+        color: #28a745; /* Mantém um verde para "key-phrase" */
+    }
+
+    #unidade8 .quiz-interaction {
+        background-color: #e9ecef; /* Fundo do quiz */
+        border: 1px solid #ced4da; /* Borda do quiz */
+    }
+
+    #unidade8 .quiz-interaction strong {
+        color: #0056b3; /* Cor do texto forte no quiz */
+    }
+
+    #unidade8 .quiz-interaction .options button {
+        background-color: #007bff; /* Botões do quiz em azul */
+    }
+    #unidade8 .quiz-interaction .options button:hover {
+        background-color: #0056b3;
+    }
+
+/* Interactive Elements - Collapsible Sections (Default) */
+details { 
+    background-color: #e0f7fa; 
+    border: 1px solid #b2ebf2; 
+    border-radius: 6px; 
+    margin: 15px 0; 
+}
+
+summary { 
+    font-weight: bold; 
+    padding: 15px; 
+    cursor: pointer; 
+    color: #0056b3; 
+    outline: none; 
+    transition: background-color 0.3s; 
+}
+
+details[open] summary { 
+    background-color: #c9e8eb; border-bottom: 1px solid #b2ebf2; }
+details p, details ul, details table { padding: 0 15px 15px 15px; margin: 0; 
+}
+
+/* Highlighting and Key Concepts (Default) */
+.key-concept { 
+    font-weight: 700; 
+    color: #d32f2f; 
+}
+
+.key-phrase { 
+    font-style: italic; 
+    color: #388e3c; 
+}
+
+.highlight { 
+    background-color: #fff3e0; 
+    border-left: 5px solid #ff9800; 
+    padding: 20px; 
+    margin: 20px 0; 
+    border-radius: 6px; 
+}
+
+/* Interactive Quiz/Verification (Default) */
+.quiz-interaction { 
+    background-color: #f2f2f2; 
+    padding: 20px; 
+    border-radius: 8px; 
+    margin: 20px 0; 
+    border: 1px solid #ccc; 
+}
+
+.quiz-interaction strong { 
+    color: #0056b3; 
+}
+
+.quiz-interaction .options button { 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    margin-right: 10px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+.quiz-interaction .options button:hover {           
+    background-color: #0056b3; 
+}
+
+.quiz-interaction .feedback { 
+    margin-top: 15px; 
+    padding: 10px; 
+    border-radius: 5px; 
+    font-weight: bold; 
+}
+
+.feedback.hidden {
+     display: none; 
+}
+
+.feedback.correct { 
+    color: #1e8449; 
+}
+
+.feedback.incorrect { 
+    color: #cb4335; 
+}
+
+/* Table Style (Default) */
+table { width: 100%; 
+    border-collapse: collapse; 
+    margin: 20px 0; 
+}
+
+th, td { 
+    border: 1px solid #ddd; 
+    padding: 10px; 
+    text-align: left; 
+}
+
+th { 
+    background-color: #0056b3; 
+    color: white; 
+}
+    </style>
+    
+    <script>
+        // Correção de Lógica 1: Mecanismo de Quiz (checkAnswer)
+        function checkAnswer(button) {
+            const quizContainer = button.closest('.quiz-interaction');
+            const feedbackElement = quizContainer.querySelector('.feedback');
+            const buttons = quizContainer.querySelectorAll('.options button');
+            const isCorrect = button.dataset.correct === 'true';
+
+            // 1. Desabilita todos os botões e os estiliza
+            buttons.forEach(btn => {
+                btn.disabled = true;
+                btn.style.backgroundColor = '#ccc';
+                btn.style.color = '#333';
+            });
+            
+            // 2. Estiliza o botão clicado e define a classe de feedback
+            if (isCorrect) {
+                button.style.backgroundColor = '#1e8449'; // Verde para correto
+                feedbackElement.className = 'feedback correct';
+            } else {
+                button.style.backgroundColor = '#cb4335'; // Vermelho para incorreto
+                // Opcional: Destacar o botão correto
+                buttons.forEach(btn => {
+                    if (btn.dataset.correct === 'true') {
+                        btn.style.border = '2px solid #1e8449';
+                        btn.style.backgroundColor = '#e0ffe0';
+                        btn.style.color = '#1e8449';
+                    }
+                });
+                feedbackElement.className = 'feedback incorrect';
+            }
+
+            // 3. Exibe o feedback
+            feedbackElement.style.display = 'block';
+        }
+
+        // Correção de Lógica 2: Navegação da Sidebar (IntersectionObserver)
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.unit-card');
+            const navLinks = document.querySelectorAll('#sidebar a');
+
+            const options = {
+                root: null,
+                rootMargin: '0px',
+                // Threshold: 0.5 significa que o observador ativa quando 50% da seção está visível
+                threshold: 0.5 
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Limpa a classe 'active' de todos os links
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                        });
+
+                        // Aplica 'active' ao link correspondente à seção visível
+                        const targetId = entry.target.id;
+                        const activeLink = document.querySelector(`#sidebar a[href="#${targetId}"]`);
+                        
+                        if (activeLink) {
+                            activeLink.classList.add('active');
+                        }
+                    }
+                });
+            }, options);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+            
+            // Lógica para rolagem suave ao clicar nos links (opcional, mas melhora a UX)
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Previne o comportamento padrão (salto instantâneo)
+                    e.preventDefault(); 
+                    
+                    // Obtém o alvo do href (ex: #unidade8)
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        // Rola para o elemento com um comportamento suave
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <nav id="sidebar">
+        <h1>Guia de Marketing Digital</h1>
+        <p style="margin-bottom: 25px; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 10px;">Conteúdo Programático</p>
+        <a href="#unidade1">1. Fundamentos e Evolução</a>
+        <a href="#unidade2">2. Branding e Autoridade</a>
+        <a href="#unidade3">3. Jornada e Funil de Vendas</a>
+        <a href="#unidade4">4. Influência e Conteúdo</a>
+        <a href="#unidade5">5. Métricas, SEO e Performance</a>
+        <a href="#unidade6">6. Planejamento Estratégico</a>
+        <a href="#unidade7">7. Diversidade e Transversalidade</a>
+        <a href="#unidade8">8. Marketing Rede Sociais</a>
+        <a href="resumo-do-guia.html">9. Resumo do Guia</a>
+    </nav>
+
+    <main id="main-content">
+        
+        <section id="unidade1" class="unit-card">
+            <h2>1. Introdução aos Fundamentos do Marketing Digital e Sua Evolução</h2>
+            <div class="highlight">
+                <p>O sucesso hoje não depende apenas de "estar no ambiente digital". É preciso entender a evolução do marketing, o comportamento do consumidor e as estratégias interligadas entre <span class="key-concept">algoritmos, dados e valores humanos</span>.</p>
+            </div>
+            
+            <details open>
+                <summary>Evolução: Do Marketing 1.0 ao 5.0</summary>
+                <ul>
+                    <li><span class="key-concept">Marketing 1.0</span>: Focado no <span class="key-phrase">produto e produção em massa</span>.</li>
+                    <li><span class="key-concept">Marketing 3.0</span>: Foco em <span class="key-phrase">valores humanos e propósito</span>. Busca conexão emocional.</li>
+                    <li><span class="key-concept">Marketing 5.0</span>: Integra <span class="key-phrase">tecnologias (IA, automação)</span> para criar <span class="key-phrase">experiências humanas e personalizadas de forma ética e responsável</span>.</li>
+                </ul>
+            </details>
+        </section>
+
+        <section id="unidade2" class="unit-card">
+            <h2>2. Branding Digital e Construção de Autoridade</h2>
+            <div class="highlight">
+                <p><span class="key-concept">Branding Digital</span> é a construção planejada da <span class="key-phrase">imagem, reputação e autoridade</span> de uma marca. É o <span class="key-concept">elo emocional e simbólico</span> que gera confiança.</p>
+            </div>
+
+            <details open>
+                <summary>Pilares Essenciais do Branding Digital</summary>
+                <ul>
+                    <li><span class="key-concept">Consistência e Coerência</span>: A base para a confiança e fidelização.</li>
+                    <li><span class="key-concept">Posicionamento de Marca</span>: O lugar na mente do consumidor, baseado em <span class="key-phrase">relevância, diferenciação e coerência</span>.</li>
+                </ul>
+            </details>
+            
+            <div class="quiz-interaction">
+                <p><strong>Verificação de Conceito:</strong> De acordo com Pisicchio (2021), o branding é um recurso estético focado apenas na construção de logotipos e identidade visual da marca.</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this)" data-correct="false">Verdadeiro</button>
+                    <button onclick="checkAnswer(this)" data-correct="true">Falso</button>
+                </div>
+                <p class="feedback">Resposta Correta: Falso. O branding é um processo estratégico de construção de significado, posicionamento e relacionamento entre marca e consumidor, não se limitando à estética. (Ref. PDF 02)</p>
+            </div>
+        </section>
+
+        <section id="unidade3" class="unit-card">
+            <h2>3. Jornada do Cliente e Funil de Vendas</h2>
+
+            <div class="highlight">
+                <p>O <span class="key-concept">Funil de Vendas</span> é a representação visual das etapas da <span class="key-concept">Jornada do Cliente</span>, crucial para a organização das ações de Inbound Marketing.</p>
+            </div>
+
+            <details open>
+                <summary>Fases do Funil (AIDA) e Conteúdo Estratégico</summary>
+                <ul>
+                    <li><span class="key-concept">TOPO (Atenção/Conscientização)</span>: Conteúdo leve e provocativo (Ex: vídeos curtos).</li>
+                    <li><span class="key-concept">MEIO (Interesse/Desejo/Avaliação)</span>: Conteúdo que aprofunda o vínculo (Ex: tutoriais).</li>
+                    <li><span class="key-concept">FUNDO (Ação/Conversão)</span>: Conteúdo persuasivo (Ex: depoimentos, CTAs).</li>
+                </ul>
+            </details>
+
+            <div class="quiz-interaction">
+                <p><strong>Verificação de Conceito:</strong> Uma estratégia de marketing eficiente deve nutrir o consumidor desde o topo até o fundo do funil, e não focar apenas a conversão imediata.</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this)" data-correct="true">Verdadeiro</button>
+                    <button onclick="checkAnswer(this)" data-correct="false">Falso</button>
+                </div>
+                <p class="feedback">Resposta Correta: Verdadeiro. Focar apenas a última etapa compromete o relacionamento no longo prazo. (Ref. PDF 03)</p>
+            </div>
+        </section>
+
+        <section id="unidade4" class="unit-card">
+            <h2>4. Influência Digital e Estratégias de Conteúdo</h2>
+
+            <div class="highlight">
+                <p><span class="key-concept">Influência Digital</span> é o resultado da convergência entre **autoridade, confiança e relevância**. É a capacidade de <span class="key-phrase">afetar opiniões e decisões</span>.</p>
+            </div>
+            
+            <details open>
+                <summary>Tipos de Influenciadores e Engajamento</summary>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Categoria</th>
+                            <th>Nº de Seguidores (Ref. Campbell e Farrel)</th>
+                            <th>Foco da Influência</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Micro/Nano</td>
+                            <td>10k a 100k / 0 a 10k</td>
+                            <td><span class="key-phrase">Alta taxa de interação, autenticidade e proximidade</span>.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p><span class="key-concept">Engajamento</span>: Interação real e significativa. Não é "métrica de vaidade".</p>
+            </details>
+
+            <div class="quiz-interaction">
+                <p><strong>Verificação de Conceito:</strong> Micro e nanoinfluenciadores geralmente geram mais engajamento e confiança por atuarem em nichos específicos.</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this)" data-correct="true">Verdadeiro</button>
+                    <button onclick="checkAnswer(this)" data-correct="false">Falso</button>
+                </div>
+                <p class="feedback">Resposta Correta: Verdadeiro. Eles mantêm uma relação mais próxima e autêntica com seu público, o que favorece a credibilidade. (Ref. PDF 04)</p>
+            </div>
+        </section>
+
+        <section id="unidade5" class="unit-card">
+            <h2>5. Métricas, SEO e Otimização de Performance</h2>
+
+            <div class="highlight">
+                <p>Dominar o uso de métricas e ferramentas é uma <span class="key-concept">necessidade</span>. As métricas funcionam como uma bússola, orientando a atuação da gestão.</p>
+            </div>
+
+            <details open>
+                <summary>Métricas vs. KPIs</summary>
+                <ul>
+                    <li><span class="key-concept">Métrica</span>: Dado quantitativo. Um número isolado que não diz muito sozinho.</li>
+                    <li><span class="key-concept">KPI (Key Performance Indicator)</span>: Métrica escolhida por sua <span class="key-phrase">relevância estratégica</span> para medir o sucesso.</li>
+                </ul>
+            </details>
+            
+            <details>
+                <summary>Search Engine Optimization (SEO)</summary>
+                <p>Otimização de sites e conteúdo para motores de busca para aumentar o **tráfego orgânico**.</p>
+                <ul>
+                    <li><span class="key-phrase">SEO On Page</span>: Fatores internos controláveis (Títulos, links internos, velocidade de carregamento).</li>
+                </ul>
+            </details>
+
+            <div class="quiz-interaction">
+                <p><strong>Verificação de Performance:</strong> Otimizar uma campanha com atenção aos elementos de SEO on-page, combinada com análise rigorosa de métricas como CTR, CPC e taxa de conversão, pode gerar desempenho superior aos concorrentes que investem mais verba sem essa abordagem.</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this)" data-correct="true">Verdadeiro</button>
+                    <button onclick="checkAnswer(this)" data-correct="false">Falso</button>
+                </div>
+                <p class="feedback">Resposta Correta: Verdadeiro. A gestão estratégica, com foco em otimização contínua e análise de métricas, pode gerar resultados melhores, mesmo com orçamento menor. (Ref. PDF 05)</p>
+            </div>
+        </section>
+        
+        <section id="unidade6" class="unit-card">
+            <h2>6. Planejamento Estratégico e Orçamento em Marketing Digital</h2>
+            
+            <div class="highlight">
+                <p>Planejar é essencial. Uma ideia genial, sem planejamento, pode não sair do papel ou <span class="key-phrase">fracassar em sua execução</span>.</p>
+            </div>
+
+            <details open>
+                <summary>Estrutura do Planejamento Estratégico (Magalhães e Sampaio)</summary>
+                <ol>
+                    <li><span class="key-concept">Conhecer (Diagnóstico)</span>: Análise da situação (SWOT), visando identificar o problema.</li>
+                    <li><span class="key-concept">Decidir (Metas)</span>: Definição de objetivos e das <span class="key-phrase">Metas SMART</span> (quantificação dos objetivos).</li>
+                    <li><span class="key-concept">Agir (Execução)</span>: Implementação das táticas e controle (Orçamento, ROI, Cronograma).</li>
+                </ol>
+            </details>
+            
+            <div class="quiz-interaction">
+                <p><strong>Verificação de Gestão:</strong> O papel do gestor de marketing digital se limita à criação do planejamento inicial, sendo a mensuração de resultados e os ajustes táticos responsabilidade exclusiva da equipe operacional.</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this)" data-correct="false">Verdadeiro</button>
+                    <button onclick="checkAnswer(this)" data-correct="true">Falso</button>
+                </div>
+                <p class="feedback">Resposta Correta: Falso. O gestor tem um papel central e contínuo, acompanhando métricas, interpretando cenários e tomando decisões estratégicas com base em dados reais. (Ref. PDF 06)</p>
+            </div>
+        </section>
+        
+        <section id="unidade7" class="unit-card">
+            <h2>7. Diversidade e Transversalidade no Marketing Digital</h2>
+            
+            <div class="highlight">
+                <p><span class="key-concept">Diversidade não é tendência: é urgência, é estratégia, é compromisso, é valor</span>. O consumidor cobra <span class="key-phrase">coerência e responsabilidade social</span> das marcas.</p>
+            </div>
+
+            <details open>
+                <summary>Ética e Representatividade Estratégica</summary>
+                <ul>
+                    <li><span class="key-concept">Compromisso Real</span>: A diversidade precisa ser incorporada <span class="key-phrase">estruturalmente na organização</span>, e não apenas nas campanhas.</li>
+                </ul>
+            </details>
+            
+            <div class="quiz-interaction">
+                <p><strong>Verificação de Ética:</strong> Quando feita de forma superficial, a representatividade nas campanhas pode reforçar estereótipos em vez de combatê-los.</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this)" data-correct="true">Verdadeiro</button>
+                    <button onclick="checkAnswer(this)" data-correct="false">Falso</button>
+                </div>
+                <p class="feedback">Resposta Correta: Verdadeiro. Inclusão feita sem profundidade e cuidado pode perpetuar estigmas e gerar rejeição do público. (Ref. PDF 07)</p>
+            </div>
+        </section>
+        
+        <section id="unidade8" class="unit-card">
+            <h2>8. Marketing em Redes Sociais</h2>
+            
+            <div class="highlight">
+                <p>As Redes Sociais são o principal palco de interação direta entre marca e consumidor, exigindo uma abordagem focada em **engajamento, comunidade e humanização**.</p>
+            </div>
+            
+            <details open>
+                <summary>Os 4 Pilares do Conteúdo em Redes</summary>
+                <p>Para uma estratégia de sucesso, o conteúdo deve equilibrar estes quatro pilares:</p>
+                <ul>
+                    <li><span class="key-concept">1. Conteúdo</span>: Informar, educar e entreter (Ex: Tutoriais, dicas, vídeos engraçados).</li>
+                    <li><span class="key-concept">2. Conexão</span>: Construir relacionamento e confiança (Ex: Bastidores, Stories interativos, lives).</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>Entendendo o Algoritmo: A Bússola do Conteúdo</summary>
+                <p>Os algoritmos (como o do Instagram, TikTok, etc.) priorizam o que será mais relevante para o usuário individual. Três fatores são cruciais:</p>
+                <ul>
+                    <li><span class="key-phrase">Relevância</span>: O quanto o conteúdo se alinha aos interesses anteriores do usuário.</li>
+                    <li><span class="key-phrase">Interação</span>: O histórico de conversas, comentários e reações entre o usuário e a conta.</li>
+                </ul>
+            </details>
+            
+            <div class="quiz-interaction">
+                <p><strong>Verificação de Estratégia:</strong> O foco principal de uma campanha em redes sociais deve ser o número de seguidores, pois é a métrica mais importante para o sucesso comercial.</p>
+                <div class="options">
+                    <button onclick="checkAnswer(this)" data-correct="false">Verdadeiro</button>
+                    <button onclick="checkAnswer(this)" data-correct="true">Falso</button>
+                </div>
+                <p class="feedback">Resposta Correta: Falso. O foco deve ser o engajamento e a conversão (vendas, leads), e não apenas em métricas de vaidade como o número de seguidores. (Ref. Estratégia de Conteúdo)</p>
+            </div>
+        </section>
+        
+    </main>
+</body>
+</html>
